@@ -12,7 +12,6 @@ async function init() {
     while ( retry ) {
       console.log('Calling distribute action on Eden Account:', edenAccount)
 
-
       const transact = await eosUtil
         .transact([
           {
