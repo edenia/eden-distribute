@@ -11,7 +11,7 @@
 
 This script is meant to be run as a cron job that calls the `eden.genesis::distribute` action to allocate funds for eden delegates to withdrawal on a monthly basis.
 
-It will call the `distribute` action until all funds have been distributed and the contract returns "nothing to do.".
+It will call the `distribute` action until all funds have been distributed and the contract returns "nothing to do".
 
 ## Installation
 
