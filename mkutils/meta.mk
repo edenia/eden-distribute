@@ -3,11 +3,11 @@
 VERSION ?= $(shell git rev-parse --short HEAD)
 CURRENT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 
-IMAGE_NAME_WATCHER=eden-distribute
+IMAGE_NAME_DISTRIBUTE=eden-distribute
 
 DOCKER_REGISTRY=eoscostarica506
 
-MAKE_ENV += DOCKER_REGISTRY VERSION IMAGE_NAME_WATCHER
+MAKE_ENV += DOCKER_REGISTRY VERSION IMAGE_NAME_DISTRIBUTE
 
 SHELL_EXPORT := $(foreach v,$(MAKE_ENV),$(v)='$($(v))')
 
