@@ -33,7 +33,7 @@ Some things you need before getting started:
 
 ### Quick start
 
-At this point you can execute `make run` to execute the resource watcher locally.
+At this point you can execute `make run` to execute distribute action locally.
 
 ## File Structure
 
@@ -42,7 +42,7 @@ Within the project repository you will find the following directories and files:
 ```
 eden-distribute/
 ├── src ..................... Project Source Code
-| ├── index.js .............. Resource Watcher Script
+| ├── index.js .............. Distribute Funds Script
 | ├── config ................ Configuration Parameters
 │ └── utils ................. EOSJS Utilities
 ├── package.json ............ NPM Project Metadata
