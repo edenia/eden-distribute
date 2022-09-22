@@ -17,18 +17,6 @@ const eosApi = EosApi({
   fetchConfiguration: {}
 })
 
-const getAccount = async account => {
-  try {
-    const accountInfo = await eosApi.getAccount(account)
-
-    return accountInfo
-  } catch (error) {
-    return null
-  }
-}
-const getCurrencyBalance = (code, account, symbol) =>
-  eosApi.getCurrencyBalance(code, account, symbol)
-
 const transact = async actions => {
   try {
     const keys = [eosConfig.pvtKey]
@@ -60,7 +48,5 @@ const transact = async actions => {
 }
 
 module.exports = {
-  getAccount,
-  getCurrencyBalance,
   transact
 }
